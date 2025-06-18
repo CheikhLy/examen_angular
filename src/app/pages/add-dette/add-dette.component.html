@@ -1,5 +1,5 @@
 <h4>Ajouter une dette</h4>
-<form (ngSubmit)="ajouterDette()">
+<form (ngSubmit)="ajouterDette(clientId)">
   <input type="number" [(ngModel)]="montant" name="montant" placeholder="Montant de la dette" required />
   <button type="submit">Ajouter</button>
 </form>

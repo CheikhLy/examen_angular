@@ -15,8 +15,8 @@ export class DetteService implements IDetteService {
     return this.http.get<Client>(`${this.apiUrl}/${clientId}`);
   }
 
-  addDette(dette: Dette): Observable<Dette> {
-    return this.http.post<Dette>(this.apiUrl, dette);
+  addDette(dette: Dette, clientId?: number): Observable<Dette> {
+    return this.http.post<Dette>(`${this.apiUrl}/${clientId}`, dette);
   }
 
   majMontantPaye(detteId: number, montant: number): Observable<Dette> {
