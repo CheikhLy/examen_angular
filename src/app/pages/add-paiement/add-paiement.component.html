@@ -1,0 +1,16 @@
+<div class="p-6 max-w-xl mx-auto">
+  <h4 class="text-xl font-semibold mb-4">➕ Ajouter un paiement</h4>
+  <form (ngSubmit)="ajouterPaiement()" class="space-y-4">
+    <input
+      type="number"
+      [(ngModel)]="montant"
+      name="montant"
+      class="border rounded w-full py-2 px-3"
+      placeholder="Montant"
+      required
+    />
+    <button type="submit" class="bg-blue-600 text-white py-2 px-4 rounded hover:bg-purple-700">
+      Payer
+    </button>
+  </form>
+</div>

@@ -1,0 +1,64 @@
+
+    <!-- Navigation -->
+    <nav class="border-b bg-gray-100">
+        <div class="container mx-auto px-4 py-4 flex items-center justify-between">
+          <a class="text-xl font-bold" href="#!">Start Tailwind</a>
+          <div class="hidden md:flex space-x-6">
+            @for (link of links; track link.path) {
+              @if (link.isVisible) {
+                <li class="nav-item">
+                  <a class="{{link.class}}" aria-current="page" routerLink="{{link.path}}" routerLinkActive="active">
+                    {{ link.name }}
+                  </a>
+                </li>
+              }
+              }
+            <div class="relative group">
+              <button class="text-gray-700 hover:text-gray-900 focus:outline-none">
+                Shop
+              </button>
+              <div class="absolute left-0 mt-2 w-40 bg-white border rounded shadow-lg opacity-0 group-hover:opacity-100 transition-opacity">
+                <a class="block px-4 py-2 text-gray-700 hover:bg-gray-100" href="#!">All Products</a>
+                <hr class="border-gray-200" />
+                <a class="block px-4 py-2 text-gray-700 hover:bg-gray-100" href="#!">Popular Items</a>
+                <a class="block px-4 py-2 text-gray-700 hover:bg-gray-100" href="#!">New Arrivals</a>
+              </div>
+            </div>
+          </div>
+          <form class="hidden md:block">
+            <a
+              type="submit"
+              class="flex items-center border border-gray-800 text-gray-800 px-3 py-2 rounded hover:bg-gray-800 hover:text-white"
+              routerLink="/catalogue/panier"
+            >
+              <!-- Icône panier en SVG -->
+              <svg class="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 16 16">
+                <path
+                  d="M0 1a1 1 0 0 1 1-1h1.27a1 1 0 0 1 .97.757L3.68 3H14a1 1 0 0 1 .97 1.243l-1.5 6A1 1 0 0 1 12.5 11H4a1 1 0 0 1-.97-.757L1.1 2H1a1 1 0 0 1-1-1zM3.68 4l1.5 6H12.5l1.2-4.8L12.5 4H3.68z"
+                />
+                <circle cx="6" cy="13" r="1" />
+                <circle cx="11" cy="13" r="1" />
+              </svg>
+              Cart
+            
+            </a>
+          </form>
+         
+        </div>
+        <!-- Menu mobile
+        <div class="md:hidden">
+          <div class="px-4 pt-2 pb-4 space-y-1">
+            <a class="block text-gray-700 hover:bg-gray-200 px-3 py-2 rounded" href="#!">Home</a>
+            <a class="block text-gray-700 hover:bg-gray-200 px-3 py-2 rounded" href="#!">About</a>
+            <div>
+              <button class="w-full text-left text-gray-700 hover:bg-gray-200 px-3 py-2 rounded focus:outline-none">Shop</button>
+              <div class="pl-4">
+                <a class="block text-gray-700 hover:bg-gray-200 px-3 py-2 rounded" href="#!">All Products</a>
+                <a class="block text-gray-700 hover:bg-gray-200 px-3 py-2 rounded" href="#!">Popular Items</a>
+                <a class="block text-gray-700 hover:bg-gray-200 px-3 py-2 rounded" href="#!">New Arrivals</a>
+              </div>
+            </div>
+          </div>
+        </div> -->
+      </nav>
+    
