@@ -1,0 +1,94 @@
+{
+  "clients": [
+    {
+      "id": 1,
+      "nom": "Seynabou Faye",
+      "telephone": "770000001",
+      "adresse": "Dakar",
+      "dettes": [
+        {
+          "id": 1,
+          "date": "2025-06-01",
+          "montantDette": 50000,
+          "montantPaye": 20000,
+          "montantRestant": 30000,
+          "paiements": [
+            { "id": 1, "date": "2025-06-02", "montant": 10000 },
+            { "id": 2, "date": "2025-06-05", "montant": 10000 }
+          ]
+        },
+        {
+          "id": 2,
+          "date": "2025-06-10",
+          "montantDette": 30000,
+          "montantPaye": 0,
+          "montantRestant": 30000,
+          "paiements": []
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "nom": "Cheikh Ba",
+      "telephone": "780000002",
+      "adresse": "Thiès",
+      "dettes": [
+        {
+          "id": 1,
+          "date": "2025-06-03",
+          "montantDette": 40000,
+          "montantPaye": 10000,
+          "montantRestant": 30000,
+          "paiements": [
+            { "id": 1, "date": "2025-06-04", "montant": 10000 }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "nom": "Fatimata Sow",
+      "telephone": "770000003",
+      "adresse": "Saint-Louis",
+      "dettes": [
+        {
+          "id": 1,
+          "date": "2025-06-07",
+          "montantDette": 60000,
+          "montantPaye": 60000,
+          "montantRestant": 0,
+          "paiements": [
+            { "id": 1, "date": "2025-06-08", "montant": 30000 },
+            { "id": 2, "date": "2025-06-09", "montant": 30000 }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "nom": "Moussa Diallo",
+      "telephone": "760000004",
+      "adresse": "Ziguinchor",
+      "dettes": [
+        {
+          "id": 1,
+          "date": "2025-06-11",
+          "montantDette": 70000,
+          "montantPaye": 20000,
+          "montantRestant": 50000,
+          "paiements": [
+            { "id": 1, "date": "2025-06-12", "montant": 20000 }
+          ]
+        },
+        {
+          "id": 2,
+          "date": "2025-06-13",
+          "montantDette": 35000,
+          "montantPaye": 0,
+          "montantRestant": 35000,
+          "paiements": []
+        }
+      ]
+    }
+  ]
+}
