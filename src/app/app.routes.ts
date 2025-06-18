@@ -19,7 +19,7 @@ export const routes: Routes = [
         component: DetteComponent
     },
     {
-        path: 'clients/:id/add-dette',
+        path: 'clients/:clientId/add-dette',
         component: AddDetteComponent
     }
 

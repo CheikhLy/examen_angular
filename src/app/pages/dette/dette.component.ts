@@ -55,6 +55,7 @@ export class DetteComponent implements OnInit {
     });
   }
   goToAddDette(): void {
+    this.clientId = Number(this.route.snapshot.paramMap.get('clientId'));
     this.router.navigate(['/clients', this.clientId, 'add-dette']);
   }
 }

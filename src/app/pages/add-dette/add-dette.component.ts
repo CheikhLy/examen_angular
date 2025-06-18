@@ -14,10 +14,14 @@ import { ActivatedRoute } from '@angular/router';
 export class AddDetteComponent {
   @Input() clientId!: number;
   montant: number = 0;
+  // ngOnInit(): void {
+  //   console.log(this.clientId);
+  // }
 
   constructor(private detteService: DetteService, private route: ActivatedRoute) {}
 
   ajouterDette(clientId: number): void {
+    console.log(clientId)
     const dette: Dette = {
       clientId:Number(this.route.snapshot.paramMap.get('clientId')),
       date: new Date().toISOString(),
